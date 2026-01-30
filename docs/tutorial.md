@@ -185,8 +185,9 @@ private void OnQuitButtonClicked()
  
 
 # Result
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b6f30dce-380d-44c5-893e-1075cd481b2c)
 
+
+![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/022c971e-81ac-48d7-b92f-8faf75923257)
 
 
 
