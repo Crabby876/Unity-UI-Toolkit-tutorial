@@ -1,52 +1,6 @@
 ---
-title: UI Toolkit Tutorial
----
 
-# Goal:
-In this tutorial, you will learn to creat your first menu UI for your Unity project using the UI Toolkit from Unity
-
-# Recuirements
-- You should be confident using Unity.
-- You should know some basic C# to create the connections between UI and Code and the funktions for Buttons.
-- Also it is help full if you know how styling with CSS works. Even thou you wont write it by your self, it helps you to understand what stuff like margin padding and so on do and you can easily work with it
-
-# Tutorial
-
-## Creating the UI files
-
-Unity’s UI Toolkit is based on three core components: UXML (structure), USS (styling), and C# (logic).
-
-To begin, the required UI files are created:
-
-1. In the Unity Project window, select
-Create → UI Toolkit → UI Document.
-This creates a .uxml file that defines the structure of the user interface.
-
-2. then, create a stylesheet via
-Create → UI Toolkit → StyleSheet (.uss) to control the visual appearance.
-
-3. To display the UI in a scene, add a UI Document component to a GameObject and assign the created UXML file to the Source Asset field. 
-
-4. The UXML file can be opened with the UI Builder by double-clicking it. The UI Builder is Unity’s visual editor for UI Toolkit layouts.
-
-Now you successfully assigned your UI to your game but its still empty so lets change that.
-
-## Creating the UI Structure
-
-Classes in UI Toolkit are used to group UI elements for styling and identification purposes.
-
-UI elements such as Button, Label, or VisualElement are added by dragging them from the Library into the Hierarchy in the UI Builder.
-
-<img width="443" height="978" alt="image" src="https://github.com/user-attachments/assets/d6b5bfab-7c0c-421e-a3da-db796a4e349f" />
-
-
-Each UI element can be assigned:
-
-- a Name (used to access the element in C#)
-
-- one or more Classes (used for styling and organization)
-
-When an element is createt the UI Toolkit updates your UXML file, by writing all the code for you so you dont have to worry, but if you want to do it manualy, you can do that by opening the UXML file and writing your own UXML code that could look like this:
+When an element is created the UI Toolkit updates your UXML file, by writing all the code for you so you don't have to worry, but if you want to do it manually, you can do that by opening the UXML file and writing your own UXML code that could look like this:
 ```
 <Button name="startButton" class="mainButton" text="Start" />
 ```
@@ -86,7 +40,7 @@ Changes made here immediately update the preview in the Viewport.
 ### Creating and Modifying Stylesheets Automatically
 
 When styles are edited through the UI Builder, Unity automatically updates the associated USS stylesheet in the background.
-No manual code editing is required, but like earlyier if you want to write it on your own you may by editing the USS file manualy wich is just like CSS and could look like this:
+No manual code editing is required, but like earlier if you want to write it on your own you may by editing the USS file manually which is just like CSS and could look like this:
 ```
 .mainButton {
     width: 200px;
@@ -108,7 +62,7 @@ All styling changes are displayed in real time within the UI Builder, allowing q
 
 ## Linking Buttons and Adding Functionality
 
-UI behavior is implemented using C# scripts. So the first thing you have to do ist creating a new class for example MenuController.cs. Now this is where you need some C# knowladge becouse you need to write the code for this part manualy.
+UI behaviour is implemented using C# scripts. So the first thing you have to do is creating a new class for example MenuController.cs. Now this is where you need some C# knowledge because you need to write the code for this part manually.
 
 ### Accessing the UI Root
 
@@ -179,8 +133,8 @@ private void OnQuitButtonClicked()
 
 ```
 
-# Posible problems
-- Missspelling the name of elements can lead to problems with referencing them in your C# code
+# Possible problems
+- Misspelling the name of elements can lead to problems with referencing them in your C# code
     - Solution: When creating elements you should use the same name structure for each of them so accessing them in C# is easier and less confusing
  
 
@@ -188,6 +142,5 @@ private void OnQuitButtonClicked()
 
 
 ![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/022c971e-81ac-48d7-b92f-8faf75923257)
-
 
 
